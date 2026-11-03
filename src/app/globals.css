@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+  color: #0b2a5b;
+  background-color: #f1f6fc;
+  background-image:
+    radial-gradient(1100px 520px at 0% 0%, #e6f0fc 0%, rgba(230, 240, 252, 0) 70%),
+    radial-gradient(900px 500px at 100% 100%, #eaf1fa 0%, rgba(234, 241, 250, 0) 70%);
+  background-attachment: fixed;
+}
+
+/* One-screen dashboard on desktop (>= 1280px wide): no page scrolling. */
+@media (min-width: 1280px) {
+  body {
+    overflow: hidden;
+  }
+}
